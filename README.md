@@ -2,8 +2,6 @@
 
 A tool to scan websites for broken links that could potentially be taken over. It checks for common platform links (Facebook, Twitter, etc.) and verifies if they show signs of being vulnerable to takeover.
 
-![Banner](assets/banner.png)
-
 ## Features
 
 - Scan single URL or list of URLs
