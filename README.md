@@ -35,11 +35,11 @@ Etc...
 
 **Scan a single URL:**
 
-`./bls -u https://example.com -t templates.txt -m onetime`
+`go run blink.go -u https://example.com -t templates.txt -m onetime`
 
 Scan multiple URLs from a file:
 
-`./bls -l urls.txt -t templates.txt -m infinite`
+`go run blink.go -l urls.txt -t templates.txt -m infinite`
 
 Command Line Options
 Flag	Description	Required	Default
@@ -54,11 +54,11 @@ One-time Scan (-m onetime)
 
 Scans targets once and exits
 Ideal for quick checks
-`./bls -u https://example.com -t templates.txt -m onetime`
+`go run blink.go -u https://example.com -t templates.txt -m onetime`
 
 Continuous Monitoring (-m infinite)
 
 Scans targets every 24 hours
 Runs indefinitely until manually stopped
 
-`./bls -l urls.txt -t templates.txt -m infinite`
+`go run blink.go -l urls.txt -t templates.txt -m infinite`
