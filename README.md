@@ -29,3 +29,36 @@ Telegram
 GitHub
 Etc...
 
+## Usage
+
+### Basic Commands
+
+**Scan a single URL:**
+
+`./bls -u https://example.com -t templates.txt -m onetime`
+
+Scan multiple URLs from a file:
+
+`./bls -l urls.txt -t templates.txt -m infinite`
+
+Command Line Options
+Flag	Description	Required	Default
+-u	Single URL to scan	Yes*	-
+-l	File containing list of URLs to scan	Yes*	-
+-t	Template file path	Yes	-
+-m	Operation mode	Yes	-
+* Either -u or -l must be provided
+
+Modes of Operation
+One-time Scan (-m onetime)
+
+Scans targets once and exits
+Ideal for quick checks
+`./bls -u https://example.com -t templates.txt -m onetime`
+
+Continuous Monitoring (-m infinite)
+
+Scans targets every 24 hours
+Runs indefinitely until manually stopped
+
+`./bls -l urls.txt -t templates.txt -m infinite`
